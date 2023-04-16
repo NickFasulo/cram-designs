@@ -1,7 +1,7 @@
 export default function App() {
   return (
     <div className='App'>
-      <h1>Hello from app</h1>
+      <h1>Cram Designs</h1>
     </div>
   )
 }
