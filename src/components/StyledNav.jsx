@@ -4,6 +4,7 @@ import StyledLink from './StyledLink'
 const NavStyles = styled.div`
   display: flex;
   justify-content: space-around;
+  margin-top: 0.5rem;
 `
 
 const LinksStyles = styled.div`
@@ -23,6 +24,7 @@ const HeaderStyles = styled.div`
 
   h1 {
     margin: 0 0 0 1rem;
+    padding-top: 0.25rem;
     width: 7rem;
   }
 `
