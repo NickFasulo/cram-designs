@@ -1,12 +1,12 @@
-import StyledLink from './components/StyledLink'
+import Slider from './components/Slider'
+import StyledNav from './components/StyledNav'
 
 export default function App() {
   return (
     <div className='App'>
-      <h1>Cram Designs</h1>
-      <StyledLink href={'/'} text={'Home'} />
-      <StyledLink href={'/about'} text={'About'} />
-      <StyledLink href={'/contact'} text={'Contact'} />
+      <StyledNav />
+      <br />
+      <Slider />
     </div>
   )
 }
