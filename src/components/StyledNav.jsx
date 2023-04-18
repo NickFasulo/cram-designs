@@ -23,8 +23,7 @@ const HeaderStyles = styled.div`
   }
 
   h1 {
-    margin: 0 0 0 1rem;
-    padding-top: 0.25rem;
+    margin: 0.25rem 0 0 1rem;
     width: 7rem;
   }
 `
@@ -33,6 +32,7 @@ export default function StyledNav() {
   return (
     <NavStyles>
       <HeaderStyles>
+        <img src='/images/cram-it-up.svg' />
         <img src='/images/tinfoil-troll.png' />
         <h1>Cram Designs</h1>
       </HeaderStyles>
