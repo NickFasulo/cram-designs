@@ -2,14 +2,17 @@ import styled from 'styled-components'
 import Link from './Link'
 
 const Nav = styled.div`
+  top: 0;
+  width: 100%;
   display: flex;
+  position: fixed;
   justify-content: space-around;
   align-items: center;
-  margin-top: 0.5rem;
+  padding: 0.5rem 0 0.75rem;
+  background: #f6edd6;
 
   @media (max-width: 750px) {
     justify-content: space-between;
-    margin: 0.5rem 1.5rem 0;
   }
 `
 
@@ -40,11 +43,21 @@ const Header = styled.div`
     img:nth-child(1) {
       display: none;
     }
+
+    img:nth-child(2) {
+      margin-left: 1rem;
+      height: 3.5rem;
+    }
+
+    h1 {
+      font-size: 1.33rem;
+    }
   }
 `
 
 const MenuIcon = styled.img`
-  height: 2.5rem;
+  height: 1.5rem;
+  margin-right: 1.5rem;
 
   @media (min-width: 751px) {
     display: none;
