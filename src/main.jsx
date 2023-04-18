@@ -8,7 +8,8 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Kavoon', cursive;
+    font-family: 'Kavoon', Sans-serif;
+    background: #f6edd6;
   }
 
   a {

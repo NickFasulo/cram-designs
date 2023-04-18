@@ -24,6 +24,10 @@ export default function Gallery() {
         <ImgStyles src='/images/design-10.png' />
         <ImgStyles src='/images/design-11.png' />
         <ImgStyles src='/images/design-12.png' />
+        <ImgStyles src='/images/design-13.png' />
+        <ImgStyles src='/images/design-14.png' />
+        <ImgStyles src='/images/design-15.png' />
+        <ImgStyles src='/images/design-16.png' />
       </Masonry>
     </ResponsiveMasonry>
   )

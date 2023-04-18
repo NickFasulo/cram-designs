@@ -19,6 +19,6 @@ const LinkStyles = styled.a`
   }
 `
 
-export default function StyledLink({ ...props }) {
+export default function Link({ ...props }) {
   return <LinkStyles href={props.href}>{props.text}</LinkStyles>
 }
