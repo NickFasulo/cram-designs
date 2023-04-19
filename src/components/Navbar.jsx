@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Link from './Link'
+import NavLink from './NavLink'
 
-const Nav = styled.div`
+const Wrapper = styled.div`
   top: 0;
   width: 100%;
   display: flex;
@@ -66,18 +66,18 @@ const MenuIcon = styled.img`
 
 export default function Navbar() {
   return (
-    <Nav>
+    <Wrapper>
       <Header>
         <img src='/images/cram-it-up.svg' />
         <img src='/images/tinfoil-troll.png' />
         <h1>Cram Designs</h1>
       </Header>
       <LinkSection>
-        <Link href={'/'} text={'Home'} />
-        <Link href={'/about'} text={'About'} />
-        <Link href={'/contact'} text={'Contact'} />
+        <NavLink href={'/'} text={'Home'} />
+        <NavLink href={'/about'} text={'About'} />
+        <NavLink href={'/contact'} text={'Contact'} />
       </LinkSection>
       <MenuIcon src='/images/menu-icon.svg' />
-    </Nav>
+    </Wrapper>
   )
 }

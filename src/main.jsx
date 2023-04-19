@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createGlobalStyle } from 'styled-components'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 
 const GlobalStyles = createGlobalStyle`
@@ -9,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: 'Kavoon', Sans-serif;
+    font-display: block;
     background: #f6edd6;
   }
 
@@ -18,8 +20,10 @@ const GlobalStyles = createGlobalStyle`
 `
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <>
     <GlobalStyles />
-    <App />
-  </React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </>
 )

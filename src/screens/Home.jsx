@@ -16,12 +16,10 @@ const Wrapper = styled.div`
   }
 `
 
-export default function Gallery() {
+export default function Home() {
   return (
     <Wrapper>
-      <ResponsiveMasonry
-        columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-      >
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry>
           <Img src='/images/design-1.png' />
           <Img src='/images/design-2.png' />
