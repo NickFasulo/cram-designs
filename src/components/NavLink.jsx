@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const LinkStyles = styled.a`
+const LinkStyles = styled(Link)`
   width: 5rem;
   height: 2rem;
   padding-top: 0.5rem;
@@ -17,8 +18,15 @@ const LinkStyles = styled.a`
   &:hover {
     background: #85eba8;
   }
+
+  @media (max-width: 750px) {
+    width: 4.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    padding-top: 0.25rem;
+  }
 `
 
 export default function NavLink({ ...props }) {
-  return <LinkStyles href={props.href}>{props.text}</LinkStyles>
+  return <LinkStyles to={props.href}>{props.text}</LinkStyles>
 }
