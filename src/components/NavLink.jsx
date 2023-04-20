@@ -20,10 +20,10 @@ const LinkStyles = styled(Link)`
   }
 
   @media (max-width: 750px) {
-    width: 4.5rem;
-    height: 1.5rem;
+    width: 4.75rem;
+    height: 1.75rem;
     font-size: 1rem;
-    padding-top: 0.25rem;
+    padding-top: 0.33rem;
   }
 `
 

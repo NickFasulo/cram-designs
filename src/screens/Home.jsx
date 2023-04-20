@@ -11,14 +11,25 @@ const Wrapper = styled.div`
   padding: 0 1rem;
   margin: 7.5rem auto 5rem;
 
+  h2 {
+    margin: 2rem 0;
+    text-align: center;
+    font-family: 'Concert One', Sans-serif;
+  }
+
   @media (max-width: 750px) {
     margin: 5.5rem auto;
+
+    h2 {
+      font-size: larger;
+    }
   }
 `
 
 export default function Home() {
   return (
     <Wrapper>
+      <h2>Check out these custom made shirts!</h2>
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry>
           <Img src='/images/design-1.png' />

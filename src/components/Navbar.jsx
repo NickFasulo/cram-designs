@@ -21,6 +21,7 @@ const Wrapper = styled.div`
 const LinkSection = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-right: 3rem;
   width: 30rem;
 
   @media (max-width: 750px) {
@@ -42,7 +43,7 @@ const Header = styled.div`
 
 const MenuIcon = styled.img`
   height: 1.5rem;
-  margin-right: 1.5rem;
+  margin-right: 1.75rem;
 
   @media (min-width: 751px) {
     display: none;
@@ -51,7 +52,7 @@ const MenuIcon = styled.img`
 
 const CloseIcon = styled.img`
   height: 2rem;
-  margin-right: 1.5rem;
+  margin-right: 1.75rem;
 
   @media (min-width: 751px) {
     display: none;
@@ -60,6 +61,7 @@ const CloseIcon = styled.img`
 
 const Logo = styled.div`
   display: flex;
+  margin-left: 3rem;
 
   img:nth-child(1),
   img:nth-child(2) {
@@ -72,12 +74,13 @@ const Logo = styled.div`
   }
 
   @media (max-width: 750px) {
+    margin-left: 1.5rem;
+
     img:nth-child(1) {
       display: none;
     }
 
     img:nth-child(2) {
-      margin-left: 1rem;
       height: 3.5rem;
     }
 
