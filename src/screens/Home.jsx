@@ -9,7 +9,7 @@ const Img = styled.img`
 const Wrapper = styled.div`
   max-width: 100rem;
   padding: 0 1rem;
-  margin: 7.5rem auto 5rem;
+  margin: 9rem auto 5rem;
 
   h2 {
     margin: 2rem 0;
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 750px) {
-    margin: 5.5rem auto;
+    margin: 7.5rem auto;
 
     h2 {
       font-size: larger;
