@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import styled from 'styled-components'
 
@@ -39,10 +39,17 @@ const Wrapper = styled.div`
     width: 100%;
     margin-top: 2rem;
     font-family: 'Concert One', Sans-serif;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+  }
+
+  .active {
     cursor: pointer;
   }
 
-  input[type='submit']:hover {
+  .active:hover {
     background: #85eba8;
   }
 
@@ -66,6 +73,7 @@ const Wrapper = styled.div`
 `
 
 export default function Contact() {
+  const [disabled, setDisabled] = useState(false)
   const form = useRef()
 
   const sendEmail = e => {
@@ -73,10 +81,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_4p5u1ou',
+        'template_bql7xps',
         form.current,
-        'YOUR_PUBLIC_KEY'
+        'cieQI-6jYknU9CVGm'
       )
       .then(
         result => {
@@ -86,6 +94,8 @@ export default function Contact() {
           console.log(error.text)
         }
       )
+
+    setDisabled(true)
   }
 
   return (
@@ -96,12 +106,16 @@ export default function Contact() {
       </header>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
-        <input type='text' name='user_name' />
+        <input type='text' name='sender_name' />
         <label>Email</label>
-        <input type='email' name='user_email' />
+        <input type='email' name='sender_email' />
         <label>Message</label>
         <textarea name='message' rows={6} />
-        <input type='submit' value='Send' />
+        {disabled ? (
+          <input className='disabled' type='submit' disabled value={'Sent!'} />
+        ) : (
+          <input className='active' type='submit' value={'Send'} />
+        )}
       </form>
     </Wrapper>
   )
