@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   margin: 7.5rem 0 5rem;
 
   h1 {
-    margin: 2rem 0;
+    margin: 2rem 0 1rem;
     text-align: center;
     font-family: 'Concert One', Sans-serif;
   }
@@ -25,6 +25,13 @@ const Wrapper = styled.div`
     margin: 0 1rem 2rem;
     width: 20rem;
     text-align: center;
+  }
+
+  @media (max-width: 320px) {
+    img,
+    p {
+      width: 18rem;
+    }
   }
 `
 
