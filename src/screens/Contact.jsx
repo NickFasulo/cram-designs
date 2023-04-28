@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 8rem 0 3rem;
+  margin: 9rem 0 3rem;
   font-family: 'Concert One', Sans-serif;
 
   h2 {
@@ -39,6 +39,7 @@ const Wrapper = styled.div`
     width: 100%;
     margin-top: 2rem;
     font-family: 'Concert One', Sans-serif;
+    background: #ebebeb;
   }
 
   .disabled {

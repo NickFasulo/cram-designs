@@ -33,7 +33,6 @@ export default function Home() {
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry>
           <img src='/images/design-1.png' />
-          <img src='/images/design-2.png' />
           <img src='/images/design-3.png' />
           <img src='/images/design-4.png' />
           <img src='/images/design-5.png' />

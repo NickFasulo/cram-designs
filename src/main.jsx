@@ -12,6 +12,8 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Kavoon', Sans-serif;
     font-display: block;
     background: #f6edd6;
+    position: relative;
+    min-height: 100vh;
   }
 
   a {
