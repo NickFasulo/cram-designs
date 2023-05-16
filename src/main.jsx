@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     background: #f6edd6;
     position: relative;
     min-height: 100vh;
-    text-shadow: 0.5px 0.5px white;
+    text-shadow: 1px 1px 1px white;
   }
 
   a {

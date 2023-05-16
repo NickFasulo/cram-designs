@@ -48,6 +48,7 @@ export default function Home() {
           <img src='/images/design-15.png' />
           <img src='/images/design-16.png' />
           <img src='/images/design-17.png' />
+          <img src='/images/design-18.png' />
         </Masonry>
       </ResponsiveMasonry>
     </Wrapper>
